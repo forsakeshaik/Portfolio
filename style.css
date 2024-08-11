@@ -8,8 +8,6 @@
     src: url('apercu-medium-pro.ttf') format('truetype');
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -24,18 +22,17 @@ body {
     height: 100%;
 }
 
-a{
+a {
     color: white;
 }
 
-
-#minicircle{
+#minicircle {
     mix-blend-mode: difference;
     width: 40px;
     height: 40px;
     position: absolute;
     z-index: 999999;
-    border-radius: 50% ;
+    border-radius: 50%;
     background-color: #fff;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
@@ -76,7 +73,6 @@ h3 {
     margin-left: 100px;
 }
 
-
 #heading h1 {
     mix-blend-mode: difference;
     pointer-events: none;
@@ -91,7 +87,6 @@ h3 {
 
 h6 {
     white-space: pre;
-    left
 }
 
 .blocktext {
@@ -122,12 +117,11 @@ h6 {
     color: white;
 }
 
-#herofooter #based{
+#herofooter #based {
     font-size: 1.7vh;
 }
 
 #herofooter {
-    position: a;
     text-decoration: none;
     color: white;
     display: flex;
@@ -135,8 +129,6 @@ h6 {
     justify-content: space-between;
     padding: 20px;
 }
-
-
 
 #hero2 {
     padding-right: 5vw;
@@ -156,8 +148,7 @@ h6 {
     padding: 3vw 3vw;
     border-top: 1px solid gray;
     margin-bottom: 0;
-    position: relative; /* Make .elem the positioning context */
-    overflow: ; /* Prevent images from extending outside of .elem */
+    position: relative;
 }
 
 .elem h1 {
@@ -168,16 +159,16 @@ h6 {
 
 .elemlast {
     border-bottom: 1px solid gray;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .elem img {
-    width: 50vh; 
+    width: 50vh;
     position: absolute;
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.1s ease, transform 0.2s ease; /* Smooth transition for visibility and scale */
-    pointer-events: none; /* Allow clicks to pass through the image */
-    will-change: transform; /* Optimize performance */
+    opacity: 0;
+    transition: opacity 0.1s ease, transform 0.2s ease;
+    pointer-events: none;
+    will-change: transform;
 }
 
 #about {
@@ -190,21 +181,21 @@ h6 {
     justify-content: space-between;
     align-items: center;
     gap: 7vh;
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 #about img {
     height: auto;
     width: 40%;
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-width: 100%;
     border-radius: 5%;
-    margin-bottom: 20px; /* Add some space at the bottom on smaller screens */
+    margin-bottom: 20px;
 }
 
 #textabout {
-    width: 100%; /* Set width to 100% for smaller screens */
-    max-width: 48rem; /* Limit width on larger screens */
-    font-size: 2vh; /* Adjusted font size */
+    width: 100%;
+    max-width: 48rem;
+    font-size: 2vh;
     margin-bottom: 30px;
 }
 
@@ -221,65 +212,61 @@ h6 {
     text-decoration: none;
 }
 
-#aboutme{
+#aboutme {
     text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
     #about {
-        flex-direction: column; /* Stack image and text vertically on mobile */
+        flex-direction: column;
         align-items: center;
-        text-align: center; /* Center the text on mobile */
+        text-align: center;
     }
 
     #about img {
-        width: 80%; /* Make the image larger on mobile */
+        width: 80%;
     }
 
     #textabout {
         width: 90%;
-        font-size: 2vh; /* Slightly increase font size for readability */
+        font-size: 2vh;
     }
 
     #textabout a {
-        padding: 10px 20px; /* Adjust padding for buttons */
+        padding: 10px 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
     #about img {
-        width: 90%; /* Full-width image on very small screens */
+        width: 90%;
     }
 
     #textabout {
-        width: 100%; /* Full-width text on very small screens */
-        font-size: 2.5vh; /* Increase font size for readability */
+        width: 100%;
+        font-size: 2.5vh;
     }
 }
 
 #skill {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    margin: 0 auto; /* Center the container itself */
-    width: 80%; /* Adjust width for better responsiveness */
-    max-width: 500px; /* Limit the maximum width for larger screens */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
     border: 2px solid gray;
-    border-radius: 50px; /* Slightly round the borders */
-    padding: 20px; /* Add some padding for better spacing */
-    box-sizing: border-box; /* Ensure padding doesn't affect the overall width */
+    border-radius: 50px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #skill img {
     width: 50px;
-    margin: 5px; /* Adjust the spacing around the icons */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover */
-    position: relative; /* Ensure the element's position is relative for the hover effect */
+    margin: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
 }
-
-
-
-
 
 #last {
     color: white;
@@ -293,7 +280,6 @@ h6 {
     align-items: center;
     text-transform: uppercase;
     opacity: .8;
-
 }
 
 #footer {
@@ -302,7 +288,7 @@ h6 {
     background-color: black;
 }
 
-#footer #yeartime{
+#footer #yeartime {
     padding: 30px;
     display: flex;
     align-items: center;
@@ -313,29 +299,27 @@ h6 {
     padding-bottom: 1px;
     width: 100%;
     border-bottom: 1px solid white;
-
 }
 
-
-.bounding{
+.bounding {
     width: fit-content;
     overflow: hidden;
 }
 
-.bounding .boundingelem{
+.bounding .boundingelem {
     transform: translateY(100%);
 }
 
 #type {
     display: inline-block;
-    padding-left: 1px; /* Slight left padding to position the text */
-    white-space: nowrap; /* Prevents the text from wrapping */
-    overflow: hidden; /* Ensures no text spills out of the container */
-    font-family: inherit; /* Inherit the font style from the parent */
-    font-size: inherit; /* Inherit the font size from the parent */
-    min-width: 150px; /* Set a fixed or minimum width to prevent layout shift */
-    text-align: right; /* Align text to the left */
-    vertical-align: top; /* Align the text vertically at the top */
+    padding-left: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: inherit;
+    font-size: inherit;
+    min-width: 150px;
+    text-align: right;
+    vertical-align: top;
 }
 
 .circle {
@@ -343,17 +327,17 @@ h6 {
     width: 24px;
     border-radius: 24px;
     background-color: black;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-  }
+    z-index: 99999999;
+}
 
-  #imageContainer {
+#imageContainer {
     position: relative;
-    width: 400px;
-    height: 550px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -362,27 +346,43 @@ h6 {
     max-width: 100%;
     filter: saturate(-5);
     transition: all ease 0.5s;
-  }
-  
-  #imageContainer:hover {
+}
+
+#imageContainer:hover {
     filter: saturate(100%);
-  }
-  
-  #imageContainer > * {
+}
+
+#imageContainer > * {
     position: absolute;
     inset: 0;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
-  }
-  
-
-  #connect {
-    padding: 5px 20px; /* Reduced padding: 5px for top/bottom, 20px for left/right */
-    width: calc(100% - 600px); /* Adjust the width based on the total margin */
-    margin-left: 40vh; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-    border: 1px solid white; /* Keep the thinner border */
-    border-radius: 25px; /* Keep the border-radius */
 }
 
+#connect {
+    padding: 5px 20px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #connect {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+.elem h1 {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.elem.show h1 {
+    opacity: 1;
+    transform: translateX(0);
+}
