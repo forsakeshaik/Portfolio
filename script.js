@@ -4,6 +4,19 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+//hiding mouse
+const minicircle = document.getElementById('minicircle');
+
+// Hide the minicircle initially
+minicircle.style.display = 'none';
+
+document.addEventListener('mousemove', function(event) {
+    // Display the minicircle on the first mouse movement
+    if (minicircle.style.display === 'none') {
+        minicircle.style.display = 'block';
+    }
+});
+
 function firstPage() {
     var tl = gsap.timeline();
 
@@ -60,6 +73,8 @@ function circleskew() {
         circleMouseFollower(event.clientX, event.clientY, xscale, yscale);
     });
 }
+
+
 
 function circleMouseFollower(x, y, xscale, yscale) {
     const minicircle = document.querySelector('#minicircle');
@@ -207,72 +222,6 @@ skillImages.forEach(img => {
     });
 });
 
-
-// //cursor
-// const coords = { x: 0, y: 0 };
-// const circles = document.querySelectorAll(".circle");
-
-// const colors = [
-//  "#ffffff",  /* Pure white */
-// "#f2f2f2",  /* Very light gray */
-// "#e6e6e6",  /* Light gray */
-// "#d9d9d9",  /* Soft gray */
-// "#cccccc",  /* Medium light gray */
-// "#bfbfbf",  /* Neutral gray */
-// "#b3b3b3",  /* Slightly darker gray */
-// "#a6a6a6",  /* Medium gray */
-// "#999999",  /* Standard gray */
-// "#8c8c8c",  /* Medium dark gray */
-// "#808080",  /* Classic gray */
-// "#737373",  /* Slightly darker than classic gray */
-// "#666666",  /* Dark gray */
-// "#595959",  /* Deeper gray */
-// "#4d4d4d",  /* Darker still */
-// "#404040",  /* Very dark gray */
-// "#333333",  /* Near-black gray */
-// "#262626",  /* Darker near-black gray */
-// "#1a1a1a",  /* Almost black */
-// "#0d0d0d",  /* Very close to black */
-// "#000000"   /* Pure black */
-// ];
-
-// circles.forEach(function (circle, index) {
-//   circle.x = 0;
-//   circle.y = 0;
-//   circle.style.backgroundColor = colors[index % colors.length];
-// });
-
-// window.addEventListener("mousemove", function(e){
-//   coords.x = e.clientX;
-//   coords.y = e.clientY;
-  
-// });
-
-// function animateCircles() {
-  
-//   let x = coords.x;
-//   let y = coords.y;
-  
-//   circles.forEach(function (circle, index) {
-//     circle.style.left = x - 12 + "px";
-//     circle.style.top = y - 12 + "px";
-    
-//     circle.style.scale = (circles.length - index) / circles.length;
-    
-//     circle.x = x;
-//     circle.y = y;
-
-//     const nextCircle = circles[index + 1] || circles[0];
-//     x += (nextCircle.x - x) * 0.3;
-//     y += (nextCircle.y - y) * 0.3;
-//   });
- 
-//   requestAnimationFrame(animateCircles);
-// }
-
-// animateCircles();
-
-//image distort error
 
 // variables
 const imageContainer = document.getElementById("imageContainer");
@@ -422,3 +371,20 @@ function handleMouseLeave() {
   easeFactor = 0.05;
   targetMousePosition = { ...prevPosition };
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elems = document.querySelectorAll('.elem');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    elems.forEach(elem => {
+        observer.observe(elem);
+    });
+});
+
