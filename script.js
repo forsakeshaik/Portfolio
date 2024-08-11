@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const words = ["Analyst", "Designer", "Developer"];
+    const words = ["Analyst-", "Designer-", "Developer-"];
     const typeElement = document.getElementById("type");
 
     let wordIndex = 0;
