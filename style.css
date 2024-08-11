@@ -253,7 +253,7 @@ h6 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     max-width: 500px;
     border: 2px solid gray;
     border-radius: 50px;
@@ -263,7 +263,7 @@ h6 {
 
 #skill img {
     width: 50px;
-    margin: 5px;
+    margin: 2px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
 }
