@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Mycustomfont';
-    src: url('Fonts/apercu-bold-pro.ttf') format('truetype');
+    src: url('apercu-bold-pro.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'MycustomfontMed';
-    src: url('Fonts\apercu-medium-pro.ttf') format('truetype');
+    src: url('apercu-medium-pro.ttf') format('truetype');
 }
 
 
